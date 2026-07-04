@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>LUSO v5.3</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="header">
+🇵🇹 LUSO v5.3 — Motor Semântico + Ortografia Pré-1990
+</div>
+
+<div class="main">
+
+<!-- LEFT -->
+<div class="editor">
+
+<textarea id="input" placeholder="Escreve ou cola o teu texto..."></textarea>
+
+<div class="buttons">
+    <button onclick="corrigir()">Corrigir</button>
+    <button onclick="reescrever()">Reescrever</button>
+    <button onclick="analisar()">Analisar intenção</button>
+</div>
+
+<div class="output" id="output">Resultado aparecerá aqui...</div>
+
+<h3>Explicação linguística</h3>
+<div id="explain"></div>
+
+</div>
+
+<!-- RIGHT -->
+<div class="panel">
+
+<div class="card" id="stats">
+    A aguardar análise...
+</div>
+
+<div class="card">
+    ✔ Ortografia pré-1990 (pré-AO90)<br>
+    ✔ Normalização de vocabulário PT-PT<br>
+    ✔ Correção gramatical automática<br>
+    ✔ Reescrita inteligente
+</div>
+
+<div class="card" id="intent">
+    Tipo de texto: desconhecido
+</div>
+
+<div class="card" id="changes">
+    Tabela de alterações aparecerá aqui...
+</div>
+
+</div>
+
+</div>
+
+<script src="typo.js"></script>
+<script src="luso-v5.4.js"></script>
+
+</body>
+</html>
